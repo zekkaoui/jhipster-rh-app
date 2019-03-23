@@ -1,0 +1,35 @@
+{
+    "name": "Domain",
+    "fields": [
+        {
+            "fieldName": "domainName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "language",
+            "fieldType": "Language",
+            "fieldValues": "FRENCH"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "domain",
+            "otherEntityRelationshipName": "domain",
+            "relationshipName": "parentDomain",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190323141553",
+    "entityTableName": "domain",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

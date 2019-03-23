@@ -1,0 +1,10 @@
+{
+  "rhApp": {
+    "FaqType": {
+      "null": "",
+      "TEXT": "TEXT",
+      "LINK": "LINK",
+      "PDF": "PDF"
+    }
+  }
+}
