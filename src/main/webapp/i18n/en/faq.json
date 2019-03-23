@@ -1,0 +1,27 @@
+{
+  "rhApp": {
+    "faq": {
+      "home": {
+        "title": "Faqs",
+        "createLabel": "Create a new Faq",
+        "createOrEditLabel": "Create or edit a Faq"
+      },
+      "created": "A new Faq is created with identifier {{ param }}",
+      "updated": "A Faq is updated with identifier {{ param }}",
+      "deleted": "A Faq is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Faq {{ id }}?"
+      },
+      "detail": {
+        "title": "Faq"
+      },
+      "faqName": "Faq Name",
+      "faqType": "Faq Type",
+      "language": "Language",
+      "textResponse": "Text Response",
+      "linkResponse": "Link Response",
+      "pdfResponse": "Pdf Response",
+      "domain": "Domain"
+    }
+  }
+}

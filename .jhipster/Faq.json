@@ -1,0 +1,54 @@
+{
+    "name": "Faq",
+    "fields": [
+        {
+            "fieldName": "faqName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "faqType",
+            "fieldType": "FaqType",
+            "fieldValues": "TEXT,LINK,PDF"
+        },
+        {
+            "fieldName": "language",
+            "fieldType": "Language",
+            "fieldValues": "FRENCH"
+        },
+        {
+            "fieldName": "textResponse",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "linkResponse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pdfResponse",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "domain",
+            "otherEntityRelationshipName": "faq",
+            "relationshipName": "domain",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190323141554",
+    "entityTableName": "faq",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
