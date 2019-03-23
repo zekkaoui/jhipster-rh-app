@@ -1,0 +1,43 @@
+entity Domain {
+	domainName String required
+    language Language
+}
+
+entity Faq {
+	faqName String required,
+	faqType FaqType,
+    language Language,
+    textResponse TextBlob ,
+    linkResponse String,
+    pdfResponse Blob
+}
+
+enum FaqType {
+    TEXT, LINK, PDF
+}
+
+enum Language {
+    FRENCH
+}
+
+
+
+relationship ManyToOne {
+    Domain{parentDomain} to Domain,
+    Faq{domain} to Domain
+}
+
+
+// Set pagination options
+paginate Domain with infinite-scroll
+
+paginate Faq with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
